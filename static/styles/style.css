@@ -1,0 +1,396 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Billabong;
+  src: url(../fonts/Billabong.ttf);
+}
+
+:root {
+  --ca6: 219,219,219;
+  --i1d: 38,38,38;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: #fafafa;
+  height: 100vh;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;
+  -ms-flex-wrap: center;
+      flex-wrap: center;
+}
+
+.main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc(100vh - 140px);
+}
+
+.main-area .image {
+  position: relative;
+}
+
+.main-area .image .change-image {
+  position: absolute;
+  top: 100px;
+  left: 151px;
+  -webkit-transition: ease-in-out 500ms all;
+  transition: ease-in-out 500ms all;
+}
+
+.main-area .forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-area .forms .form {
+  width: 390px;
+  height: 410px;
+  background: #fff;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  border-radius: 1px;
+  margin-bottom: 10px;
+}
+
+.main-area .forms .form .form-elemans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-area .forms .form .form-elemans img {
+  width: 175px;
+  margin: 37px 98px 22px;
+}
+
+.main-area .forms .form .form-elemans .label-before, .main-area .forms .form .form-elemans .field input:valid + label::before {
+  line-height: 20px;
+  font-size: 11px;
+  top: 2px;
+  padding: 0 6px;
+  left: 41px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.main-area .forms .form .form-elemans .field {
+  position: relative;
+}
+
+.main-area .forms .form .form-elemans .field label::before {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 50px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #616161;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.main-area .forms .form .form-elemans .field input {
+  width: 79%;
+  background: #fafafa;
+  color: rgba(38, 38, 38, 0.6);
+  border: 1px solid rgba(var(--ca6, 219, 219, 219), 1);
+  border-radius: 4px;
+  margin: 3px 40px;
+  font-size: 12px;
+  padding: 9px 8px 7px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #000;
+}
+
+.main-area .forms .form .form-elemans .field input:valid {
+  outline: 0;
+  border-color: #888888;
+  padding: 14px 0 2px 8px !important;
+}
+
+.main-area .forms .form .form-elemans .field input:valid + label::before {
+  content: attr(data-title);
+}
+
+.main-area .forms .form .form-elemans .field input:valid + label::before {
+  color: rgba(38, 38, 38, 0.6);
+}
+
+.main-area .forms .form .form-elemans .field a.show {
+  position: absolute;
+  top: 10px;
+  right: 56px;
+  font-weight: 500;
+  display: none;
+  cursor: pointer;
+}
+
+.main-area .forms .form .form-elemans .field:focus {
+  background: red;
+}
+
+.main-area .forms .form .form-elemans .field:focus a:first-child {
+  display: block;
+}
+
+.main-area .forms .form .form-elemans button {
+  width: 79%;
+  margin: 8px 40px;
+  margin-top: 14px;
+  padding: 5px 9px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #fff;
+  background: #9ed8ff;
+}
+
+.main-area .forms .form .form-elemans .or {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px 40px 18px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-area .forms .form .form-elemans .or .line {
+  width: 105px;
+  height: 1px;
+  background: #c5c5c5;
+}
+
+.main-area .forms .form .form-elemans .or .or-text {
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+  font-weight: 600;
+}
+
+.main-area .forms .form .form-elemans .facebook-login {
+  margin-top: 8px;
+}
+
+.main-area .forms .form .form-elemans .facebook-login a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-area .forms .form .form-elemans .facebook-login a .fb-logo {
+  height: 30px;
+}
+
+.main-area .forms .form .form-elemans .facebook-login a .fb-logo img {
+  height: 16px;
+  width: 16px;
+  margin: 7px;
+}
+
+.main-area .forms .form .form-elemans .facebook-login a .fb-text p {
+  font-size: 14px;
+  color: #385185;
+  font-weight: 500;
+}
+
+.main-area .forms .form .form-elemans .pass-forget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 22px;
+}
+
+.main-area .forms .form .form-elemans .pass-forget a p {
+  font-size: 12px;
+  color: #00376b;
+}
+
+.main-area .forms .form-add {
+  width: 390px;
+  height: 63px;
+  background: #fff;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  border-radius: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-area .forms .form-add .new-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-area .forms .form-add .new-account p {
+  font-size: 14px;
+}
+
+.main-area .forms .form-add .new-account p.kayıtol {
+  margin-left: 4px;
+  color: #0095f6;
+  font-weight: 600;
+}
+
+.main-area .forms .app-download p {
+  font-size: 14px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.main-area .forms .app-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-area .forms .app-image img {
+  height: 40px;
+}
+
+.main-area .forms .app-image img:first-child {
+  margin-right: 10px;
+}
+
+footer .labels ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .labels ul li {
+  margin-right: 14px;
+}
+
+footer .labels ul li p {
+  color: #8e8e8e;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+footer .footer-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-end p {
+  color: #8e8e8e;
+  font-size: 12px;
+  margin: 16px 18px;
+}
+
+footer .footer-end .language {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #8e8e8e;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-end .language p {
+  margin: 16px 6px;
+}
+
+@media screen and (max-width: 886px) {
+  .main-area .image {
+    display: none;
+    visibility: hidden;
+    /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .main-area .forms .form {
+    border: none;
+  }
+  .main-area .forms .form-add {
+    border: none;
+  }
+  footer {
+    margin-top: 60px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

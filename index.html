@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="main-area">
+        <div class="image">
+            <img src="static/images/43cc71bb1b43.png" alt="" id="main-photo">
+            <div class="change-image">
+                <img src="static/images/foto1.jpg" alt="" class="photo">
+            </div>
+        </div>
+        <div class="forms">
+            <div class="form" onsubmit="submitCheck()">
+                <div class="form-elemans">
+                    <form>
+                        <img src="static/images/RWEW5Y.png" alt="">
+                        <div class="field">
+                            <input type="text" id="username" class="name" onkeydown="dogrula()" required autocomplete="off">
+                            <label for="username" title="Telefon numarası, kullanıcı adı veya e-posta" data-title="Telefon numarası, kullanıcı adı veya e-posta"></label>
+                        </div>
+                        <div class="field">
+                            <input type="password" id="password" class="pass" onkeydown="dogrula()" required autocomplete="off" >
+                            <label for="password" title="Şifre" data-title="Şifre" ></label>
+                            <a class="show" id="showPass" onclick="sifreShow()">Göster</a>
+                            <a class="show" id="hidePass" onclick="sifreHide()">Gizle</a>
+                        </div>
+                        <button type="" id="submitBtn" disabled="disabled">Giriş Yap</button>
+                    </form>
+                    <div class="or">
+                        <div class="line"></div>
+                        <div class="or-text">YA DA</div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="facebook-login">
+                        <a href="">
+                            <div class="fb-logo">
+                                <img src="static/images/FacebookLogo.png" alt="">
+                            </div>
+                            <div class="fb-text">
+                                <p>Facebook ile Giriş Yap</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="pass-forget">
+                        <a href="">
+                            <p>Şifreni mi unuttun?</p>
+                        </a>
+                    </div>
+                </div>
+        </div>
+        <div class="form-add">
+            <div class="new-account">
+                <p>Hesabın yok mu?</p>
+                <p class="kayıtol">Kaydol</p>
+            </div>
+        </div>
+        <div class="app-download">
+            <p>Uygulamayı indir.</p>
+        </div>
+        <div class="app-image">
+            <img src="static/images/30b29fd697b2.png" alt="">
+            <img src="static/images/9d46177cf153.png" alt="">
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="labels">
+            <ul>
+                <li><p>Hakkında</p></li>
+                <li><p>Blog</p></li>
+                <li><p>İş Fırsatları</p></li>
+                <li><p>Yardım</p></li>
+                <li><p>API</p></li>
+                <li><p>Gizlilik</p></li>
+                <li><p>Koşullar</p></li>
+                <li><p>Başlıca Hesaplar</p></li>
+                <li><p>Konu Etiketleri</p></li>
+                <li><p>Konumlar</p></li>
+                
+            </ul>
+            <ul>
+                <li><p>Güzellik</p></li>
+                <li><p>Dans ve Gösteri</p></li>
+                <li><p>Fitness</p></li>
+                <li><p>Yiyecek ve İçecek</p></li>
+                <li><p>Ev ve Bahçe</p></li>
+                <li><p>Müzik</p></li>
+                <li><p>Görsel Sanatlar</p></li>
+            </ul>
+        </div>
+        <div class="footer-end">
+            <div class="language">
+                <p>Türkçe</p>
+            <i class="fas fa-angle-down"></i>
+            </div>
+            <p>© 2021 Instagram from Facebook</p>
+        </div>
+    </footer>
+    <script src="static/scripts/script.js"></script>
+</body>
+</html>
